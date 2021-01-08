@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+const gitDefinition = 'Git is a version control system that manages and tracks the individual changes that one makes to their projects, then syncs with GitHub or other repository sites to upload your projects in the stages that one chooses.'
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+const gitHubDefinition = 'GitHub is a repository site that syncs with Git to hold ones code projects and keep track of every commit made by the developer.'
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,10 @@
 */
 
 //CODE HERE
-
+const init = {
+    description: 'this commit initializes a git repository inside of your terminal',
+    code: 'git init',
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +45,10 @@
 */
 
 //CODE HERE
-
+const clone = {
+    description: 'invoking this will create a clone of a forked repository inside your designated file',
+    code: 'git clone',
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +56,10 @@
 */
 
 //CODE HERE
-
+const status = {
+    description: 'invoking this command in your terminal will show the status of your current git commits',
+    code: 'git status'
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +67,10 @@
 */
 
 //CODE HERE
-
+const add = {
+    description: 'this command adds the current changes to the staged part of your repository, makes them ready to be committed',
+    code: 'git add .'
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +78,10 @@
 */
 
 //CODE HERE
-
+const commit = {
+    description: 'this commits your changes to your repository, the final stage is "git push"',
+    code: 'git commit -m "commit message"',
+}
 //////////////////PROBLEM 8////////////////////
 /*
     Create an object called 'addRemote' with 'description' and 'code' properties
@@ -74,7 +89,10 @@
 */
 
 //CODE HERE
-
+const addRemote = {
+    description: '',
+    code: 'git addRemote',
+}
 //////////////////PROBLEM 9////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
@@ -82,3 +100,7 @@
 */
 
 //CODE HERE
+const push = {
+    description: 'pushes your staged and committed changes to your GitHub repository for public viewing and storage',
+    code: 'git push'
+}
